@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Safe fictional reviewer demo for FormRewind." />
+    <title>Reviewer Demo — FormRewind</title>
+    <link rel="icon" href="../assets/formrewind-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body>
+    <header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="../"><img src="../assets/formrewind-icon.svg" alt="" />FormRewind</a><div class="nav-links"><a href="../privacy/">Privacy</a><a href="../support/">Support</a><a href="./" aria-current="page">Reviewer demo</a></div></nav></header>
+    <main class="page">
+      <div class="reviewer-banner"><p><strong>Safe reviewer demo.</strong> Fictional data only. No login, external API, analytics, or tracking.</p><span>FormRewind 1.0.0</span></div>
+      <p class="eyebrow">Reviewer demo</p><h1>Try local form history in minutes.</h1><p class="lede">This public page is intentionally separate from the deterministic Store screenshot fixture. Use only fictional values.</p>
+      <div class="demo-layout">
+        <form class="demo-form" aria-label="Fictional project proposal demo">
+          <h2>Fictional project proposal</h2>
+          <p>These ordinary fields let a reviewer safely test save, diff, field restore, matching-field restore, and pause/resume.</p>
+          <div class="field"><label for="reviewer-name">Project lead</label><input id="reviewer-name" name="project_lead" type="text" autocomplete="off" placeholder="Morgan Reed" /></div>
+          <div class="field"><label for="reviewer-email">Demo email</label><input id="reviewer-email" name="demo_email" type="email" autocomplete="off" placeholder="reviewer@example.test" /></div>
+          <div class="field"><label for="project-link">Reference URL</label><input id="project-link" name="reference_url" type="url" autocomplete="off" placeholder="https://example.test/project" /></div>
+          <div class="field"><label for="reviewer-summary">Project summary</label><textarea id="reviewer-summary" name="project_summary" placeholder="Create a calm research workspace for a fictional team."></textarea></div>
+          <div class="field"><label for="project-stage">Project stage</label><select id="project-stage" name="project_stage"><option value="">Select a stage</option><option value="draft">Draft</option><option value="review">Review</option><option value="approved">Approved</option></select></div>
+          <fieldset class="field"><legend>Priority</legend><div class="choices"><label><input type="radio" name="priority" value="standard" /> Standard</label><label><input type="radio" name="priority" value="priority" /> Priority</label></div></fieldset>
+          <div class="field"><span>Options</span><div class="choices"><label><input type="checkbox" name="include_weekly_review" /> Include a fictional weekly review</label></div></div>
+          <div class="field"><span id="rich-notes-label">Rich notes</span><div id="rich-notes" name="rich_notes" contenteditable="true" role="textbox" aria-labelledby="rich-notes-label" aria-multiline="true" data-placeholder="Add fictional notes here."></div></div>
+          <p class="demo-note">There is no submit action and this page sends no data. FormRewind observes supported local field changes through its packaged content script.</p>
+        </form>
+        <aside class="demo-guide" aria-labelledby="guide-title">
+          <h2 id="guide-title">Reviewer steps</h2>
+          <ol class="steps">
+            <li><strong>Type sample text.</strong><span>For example, enter “Reviewer Draft One” in Project lead.</span></li>
+            <li><strong>Wait about two seconds.</strong><span>Open FormRewind and confirm History on.</span></li>
+            <li><strong>Edit the value.</strong><span>Change it to “Reviewer Draft Two” and wait again.</span></li>
+            <li><strong>View history.</strong><span>Open FormRewind, choose View history, and select the earlier version.</span></li>
+            <li><strong>Inspect and restore.</strong><span>Review Previous version / Selected version, then restore one field or matching fields.</span></li>
+            <li><strong>Pause and resume.</strong><span>Use the popup to confirm changes are ignored while paused and resume afterward.</span></li>
+          </ol>
+          <p class="callout"><strong>Expected limitation:</strong> a field may remain unchanged if FormRewind cannot match it with enough confidence.</p>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="footer-inner"><p>Fictional data only · No external requests</p><p><a href="../privacy/">Privacy</a> · <a href="../support/">Support</a></p></div></footer>
+  </body>
+</html>
