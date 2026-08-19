@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="FormRewind">
+  <rect width="128" height="128" rx="28" fill="#1E5A3A"/>
+  <path d="M35 18h47l18 18v61H35z" fill="#FFFDF8"/>
+  <path d="M82 18v19h18" fill="none" stroke="#1E5A3A" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M49 45h31M49 57h26M49 69h18" fill="none" stroke="#1E5A3A" stroke-width="6" stroke-linecap="round"/>
+  <path d="m68 78 24-24" fill="none" stroke="#C9892B" stroke-width="12" stroke-linecap="round"/>
+  <path d="m56 91 5-19 13 12z" fill="#C9892B"/>
+  <path d="M96 99c-16 18-48 18-66-3" fill="none" stroke="#C9892B" stroke-width="9" stroke-linecap="round"/>
+  <path d="M43 83 29 96l15 12" fill="none" stroke="#C9892B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
